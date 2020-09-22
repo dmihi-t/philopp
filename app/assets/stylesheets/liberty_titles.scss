@@ -1,0 +1,22 @@
+// Place all the styles related to the liberty_titles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question {
+  font-size: 100px;
+}
+
+.teach {
+  font-size: 40px;
+}
+
+.create-title a {
+  border: 1px solid lightblue;
+  padding: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.create-title {
+  margin: 15px 0 0 15px;
+}

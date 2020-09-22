@@ -1,0 +1,20 @@
+// Place all the styles related to the themes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.block {
+  font-size: 70px;
+  width: 33vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  height: 20vh;
+}
+
+.top_str {
+  margin: 0 auto;
+}
