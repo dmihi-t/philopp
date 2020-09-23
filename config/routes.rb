@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'liberty_titles/index'
-  get 'titles/index'
-  get 'themes/index'
-  get 'toppages/index'
+  devise_for :users
   root to: "toppages#index"
+  get 'themes/index'
+  resources :liberty_titles, only: [:index, :new, :create, :show, :destoy]
 end

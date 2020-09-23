@@ -56,7 +56,6 @@ Things you may want to cover:
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
 | text             | text       | null: false                    |
-| theme_id         | integer    | null: false                    |
 | user             | references | null: false, foreign_key: true |
 
 ### Association

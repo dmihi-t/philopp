@@ -1,0 +1,7 @@
+<div class='new-title-container'>
+  <div class='teach'>新たに哲学するお題を作成して下さい</div>
+  <%=form_with model: @title, url:liberty_titles_path, local: true do |f|%>
+  <div><%= f.text_area :title, class: 'text_area', placeholder: '新しいお題を入力してください'%></div>
+  <div><%= f.submit "作成する", class: 'title_btn'%></div>
+  <% end %>
+</div>
