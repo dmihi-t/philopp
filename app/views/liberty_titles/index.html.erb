@@ -31,7 +31,7 @@
     <% @titles.each do |title| %>
       <div class="title">
         <div class="title-name">
-          <a href="#"><%= title.title%></a>
+          <%= link_to title.title, liberty_title_comments_path(title) %>
         </div>
       </div>
     <% end %>
