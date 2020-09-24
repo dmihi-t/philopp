@@ -55,8 +55,9 @@ Things you may want to cover:
 
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
-| text             | text       | null: false                    |
+| comment          | text       | null: false                    |
 | user             | references | null: false, foreign_key: true |
+| title            | references | null: false, foreign_key: true |
 
 ### Association
 
