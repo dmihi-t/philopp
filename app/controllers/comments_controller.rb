@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   def index
     @comment = Comment.new
     @title = Title.find(params[:liberty_title_id])
+    @comments = @title.comments.includes(:user)
   end
 
   def create
@@ -10,6 +11,7 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to liberty_title_comments_path(@title)
     else
+      @comments = @title.comments.includes(:user)
       render :index
     end
   end
