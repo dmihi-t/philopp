@@ -2,6 +2,8 @@ class LibertyTitlesController < ApplicationController
   before_action :move_to_sign_up, only: [:create]
 
   def index
+    @titles = Title.where(theme_id: 1)
+    # binding.pry
   end
 
   def new

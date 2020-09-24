@@ -28,15 +28,12 @@
   </div>
   <br>
   <div class="titles">
-    <div class="title">
-      <div class="title-name">
-        <a href="#">title1</a>
+    <% @titles.each do |title| %>
+      <div class="title">
+        <div class="title-name">
+          <a href="#"><%= title.title%></a>
+        </div>
       </div>
-    </div>
-    <div class="title">
-      <div class="title-name">
-        <a href="#">title2</a>
-      </div>
-    </div>
+    <% end %>
   </div>
 </div>
