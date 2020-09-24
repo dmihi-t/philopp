@@ -2,8 +2,8 @@ class LibertyTitlesController < ApplicationController
   before_action :move_to_sign_up, only: [:create]
 
   def index
-    @titles = Title.where(theme_id: 1)
-    # binding.pry
+    @titles = Title.where(theme_id: 1).order('created_at DESC')
+    # Model.joins(:other_table).order('other_tables.updated_at desc,models.created_at desc')
   end
 
   def new
@@ -13,7 +13,7 @@ class LibertyTitlesController < ApplicationController
   def create
     @title = Title.new(title_params)
     if @title.save
-      render :index
+      redirect_to liberty_titles_path
     else
       render :new
     end
