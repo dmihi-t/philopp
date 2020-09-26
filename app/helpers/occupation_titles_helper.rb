@@ -1,0 +1,2 @@
+module OccupationTitlesHelper
+end

@@ -1,6 +1,6 @@
 <div class='all'>
     <span class='question'>
-    自由とはなにか
+    仕事とはなにか
     </span>
 
   <div class='topic'>
@@ -24,14 +24,14 @@
   <br>
   <span class='teach'>あなたの哲学を教えてください</span><br>
   <div class="create-title">
-    <a href="/liberty_titles/new">新たなお題で哲学する</a>
+    <a href="/occupation_titles/new">新たなお題で哲学する</a>
   </div>
   <br>
   <div class="titles">
     <% @titles.each do |title| %>
       <div class="title">
         <div class="title-name">
-          <%= link_to title.title,  liberty_title_comments_path(title), class: "title-title" %>
+          <%= link_to title.title, occupation_title_comments_path(title), class: "title-title" %>
         </div>
       </div>
     <% end %>
