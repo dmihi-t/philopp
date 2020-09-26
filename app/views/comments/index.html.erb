@@ -1,0 +1,44 @@
+<div class="comment-title"> <%= @title.title %> </div>
+<% @comments.each do |comment| %>
+
+  <div class="zone">
+    <div class="left-zone"></div>
+    <div class="right-zone">
+      <div class="comme"><%= comment.comment %></div>
+      <div class="user">by<%= comment.user.nickname %></div>
+      <div class="time"><%= l comment.created_at %></div>
+    </div>
+  </div>
+
+  <div class="zone">
+    <div class="left-zone">
+      <div class="reply">
+      <% leng = comment.comment.length %>
+      <% if (leng >= 7) && (leng <= 10) %> 
+      なるほど！
+      <% elsif leng >= 16 && leng <= 20 %> もう少し詳しくお聞きしても良いでしょうか？
+      <% elsif leng >= 23 && leng <= 25 %> なぜでしょうか
+      <% elsif leng >= 28 && leng <= 30 %> 続けて下さい。
+      <% elsif leng >= 35 && leng <= 40 %> なるほど。実に興味深いです。
+      <% elsif leng >= 45 && leng <= 50 %> あなたは、そう思われているということですね。
+      <% elsif leng >= 55 && leng <= 60 %> 結論、どういうことでしょうか
+      <% elsif leng >= 65 %> なるほど。そうお考えになることもまた１つの自由なのかもしれません。
+      <% else %> なるほど
+      <% end %>
+      </div>
+    </div>
+    <div class="right-zone"></div>
+  </div>
+<% end %>
+
+  <div class="zone">
+    <div class="left-zone"></div>
+    <div class="right-zone">
+      <%= form_with model: [@title, @comment], url:liberty_title_comments_path, local: true do |f| %>
+        <div class="form-input">
+          <%= f.text_area :comment, class: 'form-comment', placeholder: 'type a message', rows: 5 %>
+        </div>
+        <%= f.submit '我思う故に我送信', class: 'form-submit' %>
+      <% end %>
+    </div>
+  </div>
