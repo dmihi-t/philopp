@@ -14,15 +14,16 @@
     <div class="left-zone">
       <div class="reply">
       <% leng = comment.comment.length %>
-      <% if leng <= 10 %> ありがとうございました！
-      <% elsif leng <= 20 %> もう少し詳しくお聞きしても良いでしょうか？
-      <% elsif leng <= 25 %> なぜでしょうか
-      <% elsif leng <= 30 %> 続けて下さい。
-      <% elsif leng <= 40 %> なるほど。実に興味深いです。
-      <% elsif leng <= 50 %> あなたは、そう思われるということですね。
-      <% elsif leng <= 60 %> 結論、どういうことでしょうか
-      <% else %> 
-      落ち着いて考えてみて下さい。
+      <% if (leng >= 7) && (leng <= 10) %> 
+      なるほど！
+      <% elsif leng >= 16 && leng <= 20 %> もう少し詳しくお聞きしても良いでしょうか？
+      <% elsif leng >= 23 && leng <= 25 %> なぜでしょうか
+      <% elsif leng >= 28 && leng <= 30 %> 続けて下さい。
+      <% elsif leng >= 35 && leng <= 40 %> なるほど。実に興味深いです。
+      <% elsif leng >= 45 && leng <= 50 %> あなたは、そう思われているということですね。
+      <% elsif leng >= 55 && leng <= 60 %> 結論、どういうことでしょうか
+      <% elsif leng >= 65 %> なるほど。そうお考えになることもまた１つの自由なのかもしれません。
+      <% else %> なるほど
       <% end %>
       </div>
     </div>
