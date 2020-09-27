@@ -2,6 +2,41 @@ crumb :root do
   link "Home", root_path
 end
 
+crumb :themes do
+  link "テーマ", themes_index_path
+  parent :root
+end
+
+crumb :liberty_titles do
+  link "自由", liberty_titles_path
+  parent :themes
+end
+
+crumb :new_liberty_title do
+  link "お題をつくる", new_liberty_title_path
+  parent :liberty_titles
+end
+
+crumb :comments do
+  link "我思うこと", liberty_title_comments_path
+  parent :liberty_titles
+end
+
+crumb :occupation_titles do
+  link "仕事", occupation_titles_path
+  parent :themes
+end
+
+crumb :new_occupation_title do
+  link "お題をつくる", new_occupation_title_path
+  parent :occupation_titles
+end
+
+crumb :comments do
+  link "我思うこと", occupation_title_comments_path
+  parent :occupation_titles
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end
