@@ -1,5 +1,4 @@
 class LibertyTitlesController < ApplicationController
-  before_action :move_to_sign_up, only: [:create]
 
   def index
     @titles = Title.where(theme_id: 1).order('created_at DESC')
@@ -11,7 +10,7 @@ class LibertyTitlesController < ApplicationController
   end
 
   def create
-    @title = Title.new(title_params)
+    @title = Title.new(liberty_title_params)
     if @title.save
       redirect_to liberty_titles_path
     else
@@ -23,10 +22,6 @@ end
 
 private
 
-def title_params
+def liberty_title_params
   params.require(:title).permit(:title).merge(theme_id: 1, user_id: current_user.id)
-end
-
-def move_to_sign_up
-  redirect_to new_user_registration_path unless user_signed_in?
 end
