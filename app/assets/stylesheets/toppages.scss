@@ -3,29 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .top {
-  width: 100vw;
   height: 100vh;
-  font-size: 300px;
+  font-size: 32vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.toppage_title {
+.title_top {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .blank {
-  width: 90px;
+  width: 50px;
 }
 
 .✕ {
-  font-size: 240px;
-}
-
-.pfhilo {
-  text-decoration: none;
+  font-size: 28vmin;
 }
