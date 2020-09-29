@@ -63,3 +63,5 @@ gem "gretel"
 
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+
+gem 'rename'

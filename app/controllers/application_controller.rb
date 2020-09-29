@@ -1,8 +1,10 @@
 class ApplicationController < ActionController::Base
-  before_action :move_to_sign_up, only: [:create]
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
-  def move_to_sign_up
-    redirect_to new_user_registration_path unless user_signed_in?
+  private
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
   end
 
 end
