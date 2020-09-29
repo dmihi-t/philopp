@@ -1,8 +1,10 @@
 class CommentsController < ApplicationController
+  before_action :move_to_sign_up, only: [:create]
+
   def index
     @comment = Comment.new
     @title = Title.find(params[:liberty_title_id])
-    @comments = @title.comments.includes(:user)
+    @comments = @title.comments.order('created_at DESC').includes(:user)
   end
 
   def create
@@ -21,4 +23,9 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment).permit(:comment).merge(user_id: current_user.id)
   end
+
+  def move_to_sign_up
+    redirect_to new_user_registration_path unless user_signed_in?
+  end
+  
 end

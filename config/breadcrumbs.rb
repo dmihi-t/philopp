@@ -32,10 +32,10 @@ crumb :new_occupation_title do
   parent :occupation_titles
 end
 
-crumb :comments do
-  link "我思うこと", occupation_title_comments_path
-  parent :occupation_titles
-end
+# crumb :comments do
+#   link "我思うこと", occupation_title_comments_path
+#   parent :occupation_titles
+# end
 
 # crumb :projects do
 #   link "Projects", projects_path

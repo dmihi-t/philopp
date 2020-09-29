@@ -10,29 +10,26 @@
   display: flex;
 }
 
-.left-zone {
-  width: 33vw;
-  font-size: 25px;
+.even-left-zone {
+  width: 30vw;
+}
+.even-right-zone {
+  width: 70vw;
 }
 
-.reply {
-  border: forestgreen;
-  border-style: dotted;
-  border-radius: 10% 30% 50% 70%;
-  padding: 15px;
-  margin: 5px;
+.odd-left-zone {
+  width: 70vw;
 }
-
-.right-zone {
-  width: 66vw;
+.odd-right-zone {
+  width: 30vw;
 }
 
 .form-comment {
-  width: 66vw;
+  width: 80vw;
 }
 
 .form-submit {
-  width: 66vw;
+  width: 80vw;
 }
 
 .comme {
@@ -40,6 +37,15 @@
   border: thick double #32a1ce;
   border-radius: 50% 20% / 10% 40%;
   padding: 15px;
+  margin: 5px;
+}
+
+.left-comme {
+  font-size: 25px;
+  border: forestgreen;
+  border-style: dotted;
+  border-radius: 10% 30% 50% 70%;
+  padding: 0 0 15px 15px;
   margin: 5px;
 }
 
@@ -51,4 +57,21 @@
 .time {
   font-size: 20px;
   text-align: right;
+}
+
+.left-user {
+  font-size: 25px;
+  text-align: left;
+}
+
+.left-time {
+  font-size: 20px;
+  text-align: left;
+}
+
+.form-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
 }

@@ -60,3 +60,8 @@ gem 'active_hash'
 gem 'pry-rails'
 
 gem "gretel"
+
+gem 'jquery-rails'
+gem 'jquery-turbolinks'
+
+gem 'rename'
