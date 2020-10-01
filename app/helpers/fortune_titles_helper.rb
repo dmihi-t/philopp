@@ -1,0 +1,2 @@
+module FortuneTitlesHelper
+end

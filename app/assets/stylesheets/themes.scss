@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .block {
-  font-size: 70px;
   width: 33vw;
   display: flex;
   text-align: center;
@@ -18,4 +17,36 @@
 .top_str {
   margin: 0 auto;
   font-size: 10vmin;
+  // transition-property: transform;
+  animation-name: move;
+  animation-duration: 12s;
+  animation-delay: 1s;
+}
+
+@keyframes move {
+  0% {
+    transform: none;
+  }
+  15% {
+    transform: translateX(-20px) rotate(10deg);
+  }
+  30% {
+    transform: translateX(20px) rotate(-10deg);
+  }
+  45% {
+    transform: translateX(-20px) rotate(10deg);
+  }
+  60% {
+    transform: translateX(20px) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(360deg);
+  }
+}
+
+.top_str:hover {
+  // transform: translate(50px, 20px);
+  transform: rotate(-10deg);
+  transition-duration: 1s;
+  // transform: scale(1.5, 1.5);
 }

@@ -3,6 +3,7 @@
     <span class='question'>
     自由とはなにか
     </span>
+    <div class="message">我思う故に我あり！</div>
 
   <div class='topic'>
     <p>他からの強制・拘束・支配などを受けないで、自らの意思や本性に従っていること。 哲学用語。<br>
@@ -32,7 +33,7 @@
     <% @titles.each do |title| %>
       <div class="title">
         <div class="title-name">
-          <%= link_to title.title,  liberty_title_comments_path(title), class: "title-title" %>
+          <%= link_to title.title, liberty_title_liberty_comments_path(title), class: "title-title" %>
         </div>
       </div>
     <% end %>

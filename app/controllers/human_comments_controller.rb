@@ -1,17 +1,17 @@
-class CommentsController < ApplicationController
+class HumanCommentsController < ApplicationController
   before_action :move_to_sign_up, only: [:create]
 
   def index
     @comment = Comment.new
-    @title = Title.find(params[:liberty_title_id])
+    @title = Title.find(params[:human_title_id])
     @comments = @title.comments.order('created_at DESC').includes(:user)
   end
 
   def create
-    @title = Title.find(params[:liberty_title_id])
+    @title = Title.find(params[:human_title_id])
     @comment = @title.comments.new(comment_params)
     if @comment.save
-      redirect_to liberty_title_comments_path(@title)
+      redirect_to human_title_human_comments_path(@title)
     else
       @comments = @title.comments.includes(:user)
       render :index

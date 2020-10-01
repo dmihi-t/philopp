@@ -1,0 +1,2 @@
+module LifestyleTitlesHelper
+end

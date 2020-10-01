@@ -1,0 +1,2 @@
+module EmotionTitlesHelper
+end

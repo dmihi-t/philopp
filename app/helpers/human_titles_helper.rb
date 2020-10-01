@@ -1,0 +1,2 @@
+module HumanTitlesHelper
+end

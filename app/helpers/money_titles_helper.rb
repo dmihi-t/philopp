@@ -1,0 +1,2 @@
+module MoneyTitlesHelper
+end

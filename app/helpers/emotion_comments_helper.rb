@@ -1,0 +1,2 @@
+module EmotionCommentsHelper
+end

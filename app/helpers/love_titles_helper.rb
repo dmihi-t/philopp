@@ -1,0 +1,2 @@
+module LoveTitlesHelper
+end

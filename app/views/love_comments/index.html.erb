@@ -1,0 +1,39 @@
+<% breadcrumb :love_title_love_comments %>
+<div class="comment-title"> <%= @title.title %> </div>
+<%# <div class="scroll_button_btm">
+  <a href="#page-bottom">ページの一番下へ</a>
+</div> %>
+
+<div class="form-zone">
+  <%= form_with model: [@title, @comment], url:love_title_love_comments_path, local: true do |f| %>
+    <div class="form-input">
+      <%= f.text_area :comment, class: 'form-comment', placeholder: 'type a message', rows: 5 %>
+    </div>
+    <%= f.submit '我思う故に我送信', class: 'form-submit' %>
+  <% end %>
+</div>
+
+<% @comments.each do |comment| %>
+
+  <% if comment.id.odd? %>
+  <div class="zone">
+    <div class="even-left-zone"></div>
+    <div class="even-right-zone">
+      <div class="comme"><%= comment.comment %></div>
+      <div class="user">by<%= comment.user.nickname %></div>
+      <div class="time"><%= l comment.created_at %></div>
+    </div>
+  </div>
+
+  <% else %>
+  <div class="zone">
+    <div class="odd-left-zone">
+      <div class="left-comme"><%= comment.comment %></div>
+      <div class="left-user">by<%= comment.user.nickname %></div>
+      <div class="left-time"><%= l comment.created_at %></div>
+    </div>
+    <div class="odd-right-zone"></div>
+  </div>
+  <% end %>
+
+<% end %>

@@ -1,0 +1,2 @@
+module DeathTitlesHelper
+end

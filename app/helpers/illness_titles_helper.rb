@@ -1,0 +1,2 @@
+module IllnessTitlesHelper
+end
