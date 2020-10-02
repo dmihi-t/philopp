@@ -68,3 +68,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 
 gem 'rename'
+
+group :production do
+  gem 'rails_12factor'
+end
