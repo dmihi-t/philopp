@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :titles
   has_many :comments
 
+  validates :nickname, presence: true
 end
