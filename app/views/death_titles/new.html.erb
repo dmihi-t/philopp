@@ -2,7 +2,7 @@
 <div class='new-title-container'>
   <div class='teach'>新たに哲学するお題をどうぞ</div>
   <%=form_with model: @title, url:death_titles_path, local: true do |f|%>
-  <div><%= f.text_area :title, class: 'text_area', placeholder: 'このアウトプットから何か新しい人生が始まるかもしれません'%></div>
+  <div><%= f.text_area :title, class: 'text_area', placeholder: 'このアウトプットから何か新しい人生が始まるかもしれません（38文字まで入力できます）'%></div>
   <div><%= f.submit "作成する", class: 'title_btn'%></div>
   <% end %>
 </div>

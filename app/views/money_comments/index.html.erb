@@ -7,7 +7,7 @@
 <div class="form-zone">
   <%= form_with model: [@title, @comment], url:money_title_money_comments_path, local: true do |f| %>
     <div class="form-input">
-      <%= f.text_area :comment, class: 'form-comment', placeholder: 'type a message', rows: 5 %>
+      <%= f.text_area :comment, class: 'form-comment', placeholder: '（100文字以内で入力して下さい）', rows: 3 %>
     </div>
     <%= f.submit '我思う故に我送信', class: 'form-submit' %>
   <% end %>
