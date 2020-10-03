@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    omniauth_callbacks: 'users/omniauth_callbacks',
+    registrations: 'users/registrations'
+  }
   root to: "toppages#index"
   get 'themes/index'
+  resources :users, only: [:index, :new]
   resources :liberty_titles, only: [:index, :new, :create, :destoy] do
     resources :liberty_comments, only: [:index, :new, :create]
   end
