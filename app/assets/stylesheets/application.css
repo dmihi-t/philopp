@@ -25,11 +25,11 @@
 }
 
 .left-bar {
-  width: 70%;
+  width: 67%;
 }
 
 .right-bar {
-  width: 30%;
+  width: 33%;
   display: flex;
   justify-content: flex-end;
 }

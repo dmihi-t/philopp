@@ -23,6 +23,14 @@
 
 .✕ {
   font-size: 20vmin;
+  margin-top: 2vmax;
+  animation-name: move-r;
+  animation-duration: 20s;
+  // animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
 }
 
 .f {
@@ -33,4 +41,10 @@
 
 .I {
   margin-top: 2vmax;
+}
+
+@keyframes move-r {
+  100% {
+    transform: rotate(360deg);
+  }
 }
