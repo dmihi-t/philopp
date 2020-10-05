@@ -1,4 +1,16 @@
-<%= link_to "メールアドレスで登録", new_user_registration_path%>
 
-<%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post%>
-<%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post%>
+<div class="form-page-margin"></div>
+
+<div class="top-mail-face-goo">
+  <div class="mail-face-goo"">
+    <%= link_to "メールアドレスで登録", new_user_registration_path%>
+  </div>
+  <br>
+  <div class="mail-face-goo">
+    <%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post%>
+  </div>
+  <br>
+  <div class="mail-face-goo">
+    <%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post%>
+  </div>
+</div>

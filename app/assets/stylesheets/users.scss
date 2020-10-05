@@ -1,3 +1,16 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.top-mail-face-goo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-face-goo {
+  height: 5vh;
+  margin-top: 3vh;
+  padding-top: 7px;
+  border: lightpink 3px solid;
+}

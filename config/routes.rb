@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   }
   root to: "toppages#index"
   get 'themes/index'
+  get 'themes/if'
   resources :users, only: [:index, :new]
   resources :liberty_titles, only: [:index, :new, :create, :destoy] do
     resources :liberty_comments, only: [:index, :new, :create]

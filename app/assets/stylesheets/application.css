@@ -25,11 +25,11 @@
 }
 
 .left-bar {
-  width: 50%;
+  width: 70%;
 }
 
 .right-bar {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
 }
@@ -61,4 +61,15 @@
   text-decoration: none;
   margin-right: 2vw;
   color: #333333;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-page-margin {
+  width: 50px;
+  height: 30px;
 }

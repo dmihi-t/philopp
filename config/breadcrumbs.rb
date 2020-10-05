@@ -7,6 +7,11 @@ crumb :themes do
   parent :root
 end
 
+crumb :philosophy do
+  link "if", themes_if_path
+  parent :root
+end
+
 crumb :liberty_titles do
   link "自由", liberty_titles_path
   parent :themes

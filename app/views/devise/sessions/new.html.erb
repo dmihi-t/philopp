@@ -1,7 +1,11 @@
-<h2>ログイン</h2>
+<div class="form-page">
+
+<div class="form-page-margin"></div>
 
 <div><%= link_to 'Facebookでログイン', user_facebook_omniauth_authorize_path, method: :post%></div>
+<div class="form-page-margin"></div>
 <div><%= link_to 'Googleでログイン', user_google_oauth2_omniauth_authorize_path, method: :post%></div>
+<div class="form-page-margin"></div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
  <%= render "devise/shared/error_messages", resource: resource %>
@@ -30,8 +34,11 @@
    </div>
 
  <div class="actions">
-   <%= f.submit "Sign up" %>
+   <%= f.submit "Sign in" %>
  </div>
 <% end %>
 
+<div class="form-page-margin"></div>
 <%= render "devise/shared/links" %>
+
+</div>
