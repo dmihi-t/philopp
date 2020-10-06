@@ -7,6 +7,21 @@ crumb :themes do
   parent :root
 end
 
+crumb :sigh_in do
+  link "", new_user_session_path
+  parent :root
+end
+
+crumb :registration do
+  link "", new_user_path
+  parent :root
+end
+
+crumb :registration_form do
+  link "", new_user_registration_path
+  parent :registration
+end
+
 crumb :philosophy do
   link "if", themes_if_path
   parent :root
