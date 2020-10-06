@@ -13,13 +13,12 @@ class OccupationTitlesController < ApplicationController
   def create
     @title = Title.new(occupation_title_params)
     if @title.save
-    # binding.pry
+      # binding.pry
       redirect_to occupation_titles_path
     else
       render :new
     end
   end
-
 end
 
 private

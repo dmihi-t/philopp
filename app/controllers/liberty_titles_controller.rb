@@ -18,7 +18,6 @@ class LibertyTitlesController < ApplicationController
       render :new
     end
   end
-
 end
 
 private

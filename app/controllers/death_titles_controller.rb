@@ -18,7 +18,6 @@ class DeathTitlesController < ApplicationController
       render :new
     end
   end
-
 end
 
 private

@@ -18,7 +18,6 @@ class IllnessTitlesController < ApplicationController
       render :new
     end
   end
-
 end
 
 private

@@ -18,7 +18,6 @@ class EmotionTitlesController < ApplicationController
       render :new
     end
   end
-
 end
 
 private
