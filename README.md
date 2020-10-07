@@ -1,65 +1,50 @@
-# README
+<h1 align="center">
+Philopp
+</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+哲学系チャットコミュニティサイト
 
-* Ruby version
+## URL
+https://philopp.herokuapp.com
 
-* System dependencies
+## テスト用アカウント
 
-* Configuration
+|               |                 |
+| ------------- | --------------- |
+| nickname      | test            |
+| mail          | test@test.com   |
+| password      | 123abc          |
 
-* Database creation
+## 利用方法
 
-* Database initialization
+ご利用方法は自由です！<br>
+自由、仕事、お金、幸せ、人間<br>
+運、死、病気、感情、成功<br>
+愛、人生、命、価値観、希望<br>
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 目指した課題解決
 
-* Deployment instructions
+例えば一匹狼で生きてきたような強い人、または迷える子羊のように弱さをさらけ出せる人、もしくは普通の人。どんな人にだって自身の生き方や考え方に疑問を投げかけ、哲学する一瞬がある。そんな一瞬で消えうる貴重な哲学を、アウトプットし、共有する。そうすることで、別の世界への入り口へと誘われる、かもしれない。それは、狼が羊になる、または羊が狼になろうとするかの如く、そんなきっかけを作りたい。
 
-* ...
+## 洗い出した要件
 
-# テーブル設計
+- ユーザー管理機能
+- チャットタイトル作成機能
+- コメント投稿機能
+- SNSアカウントログイン機能
+- パンくずリスト機能
 
-## users テーブル
+## 実装した機能についてのGIFと説明
 
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| nickname         | string     | null: false                    |
-| email            | string     | null: false                    |
-| password         | string     | null: false                    |
+実装した機能について、それぞれどのような特徴があるのか列挙しましょう。GIFを添えることで、イメージがしやすくなります。
 
-### Association
+## データベース設計
 
-- has_many :titles
-- has_many :comments
+<img src="app/assets/images/er.png" width="600">
 
-## titles テーブル
+## ローカルでの動作方法
 
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| title            | string     | null: false                    |
-| theme_id         | integer    | null: false                    |
-| user             | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- has_many :comments
-
-## comments テーブル
-
-| Column           | Type       | Options                        |
-| ---------------- | ---------- | ------------------------------ |
-| comment          | text       | null: false                    |
-| user             | references | null: false, foreign_key: true |
-| title            | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :title
+git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述しましょう。この時、アプリケーション開発に使用した環境を併記することを忘れないでください（パッケージやRubyのバージョンなど）。
