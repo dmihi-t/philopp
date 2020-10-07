@@ -15,7 +15,7 @@
 
 <% @comments.each do |comment| %>
 
-  <% if comment.id.odd? %>
+  <% if (comment.id / 10).odd? %>
   <div class="zone">
     <div class="even-left-zone"></div>
     <div class="even-right-zone">
