@@ -88,7 +88,7 @@ crumb :happiness_title_happiness_comments do
 end
 
 crumb :human_titles do
-  link "運", human_titles_path
+  link "人間", human_titles_path
   parent :themes
 end
 
