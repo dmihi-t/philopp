@@ -11,11 +11,11 @@ https://philopp.herokuapp.com
 
 ## テスト用アカウント
 
-|               |                 |
-| ------------- | --------------- |
-| nickname      | test            |
-| mail          | test@test.com   |
-| password      | 123abc          |
+|               |                |
+| ------------- | -------------- |
+| nickname      | 哲学者          |
+| mail          | philosophy@com |
+| password      | ppphhh111      |
 
 ## 利用方法
 
