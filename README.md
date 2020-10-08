@@ -47,6 +47,7 @@ _**愛**_、_**人生**_、_**命**_、_**価値観**_、_**希望**_<br>
 
 ![top](https://user-images.githubusercontent.com/69739323/95457958-85474f00-09ac-11eb-9f94-dcd064a65625.gif)  
 _トップページは、「もし、ITと、哲学が、掛け合わさるとどうなるのか」というイメージを印象付けています。_  
+  
 ![theme2](https://user-images.githubusercontent.com/69739323/95460188-980f5300-09af-11eb-9adb-635c9cd65666.gif)  
 _ログインし、１５のテーマをのぞいてみましょう！_
  
