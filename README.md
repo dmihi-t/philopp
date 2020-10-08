@@ -45,7 +45,7 @@ _**愛**_、_**人生**_、_**命**_、_**価値観**_、_**希望**_<br>
 
 ## 実装した機能についてのGIFと説明
 
-![top](https://user-images.githubusercontent.com/69739323/95457958-85474f00-09ac-11eb-9f94-dcd064a65625.gif)
+![top](https://user-images.githubusercontent.com/69739323/95457958-85474f00-09ac-11eb-9f94-dcd064a65625.gif)　おおおおおおおおおおおおおお
 
 
 ## データベース設計
