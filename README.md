@@ -53,8 +53,11 @@ _ログインし、１５のテーマをのぞいてみましょう！_
   
 ![success](https://user-images.githubusercontent.com/69739323/95461796-9e9eca00-09b1-11eb-88a2-e8d919d618ac.gif)  
 _テーマを選び、お題をつくってください_  
-
-
+  
+![come](https://user-images.githubusercontent.com/69739323/95463516-cabb4a80-09b3-11eb-8c14-6fb9356da53e.gif)  
+_あとはもう好きに哲学するのみです！_  
+  
+  
 ## データベース設計
 
 <img src="app/assets/images/er.png" width="600">
