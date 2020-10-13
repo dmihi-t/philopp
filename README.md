@@ -13,7 +13,7 @@ https://philopp.herokuapp.com
 
 |               |                |
 | ------------- | -------------- |
-| nickname      | 哲学者          |
+| nickname      | 哲学者         |
 | mail          | philosophy@com |
 | password      | ppphhh111      |
 
