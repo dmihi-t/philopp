@@ -8,7 +8,7 @@ class HopeCommentsController < ApplicationController
   end
 
   def create
-    @title = Title.find(params[:hope_hope_id])
+    @title = Title.find(params[:hope_title_id])
     @comment = @title.comments.new(comment_params)
     if @comment.save
       redirect_to hope_title_hope_comments_path(@title)

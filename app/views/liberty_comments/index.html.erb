@@ -14,8 +14,12 @@
 </div>
 
 <% @comments.each do |comment| %>
+<% array = [] %>
+<% array = @comments.ids %>
+<% array = array.reverse %>
+<% n = array.index(comment.id) %>
 
-  <% if (comment.id / 10).odd? %>
+  <% if n == 0 || (n % 2) == 0 %>
   <div class="zone">
     <div class="even-left-zone"></div>
     <div class="even-right-zone">

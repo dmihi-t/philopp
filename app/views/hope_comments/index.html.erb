@@ -1,4 +1,4 @@
-<% breadcrumb :comments %>
+<% breadcrumb :hope_title_hope_comments %>
 <div class="comment-title"> <%= @title.title %> </div>
 <%# <div class="scroll_button_btm">
   <a href="#page-bottom">ページの一番下へ</a>
@@ -14,8 +14,12 @@
 </div>
 
 <% @comments.each do |comment| %>
+<% array = [] %>
+<% array = @comments.ids %>
+<% array = array.reverse %>
+<% n = array.index(comment.id) %>
 
-  <% if comment.id.odd? %>
+  <% if n == 0 || (n % 2) == 0 %>
   <div class="zone">
     <div class="even-left-zone"></div>
     <div class="even-right-zone">
